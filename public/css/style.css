@@ -1,7 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700;800&display=swap");
 body {
-  background-color: rgb(7, 29, 25);
+  background-color: rgb(15, 15, 34);
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  font-family: "Inconsolata", monospace;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 6px 0 0;
+  color: rgb(245, 245, 245);
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(245, 245, 245);
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+  color: rgb(245, 245, 245);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(245, 245, 245);
+}
+
+p {
+  color: rgb(245, 245, 245);
+  font-size: 24px;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1270px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .sr-only {
@@ -14,33 +56,86 @@ body {
   width: 1px;
 }
 
-h1 {
-  font-size: 3em;
-  margin-bottom: 0.2em;
+.introduction {
+  padding-top: 80px;
+  margin-bottom: 150px;
+}
+.introduction__spam {
+  color: rgb(37, 227, 211);
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 0.9px;
+}
+.introduction__title {
+  font-size: 84px;
+}
+.introduction__paragraph {
+  width: 80%;
+  font-size: 28px;
 }
 
-h2 {
-  font-size: 2em;
+.card {
+  width: 190px;
+  height: 254px;
+  border-radius: 20px;
+  background: #f5f5f5;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
 }
 
-li {
-  list-style: none;
-  color: whitesmoke;
-  font-size: 50px;
-  padding: 40px;
+.card-details {
+  color: black;
+  height: 100%;
+  gap: 0.5em;
+  display: grid;
+  place-content: center;
 }
 
-a {
-  color: whitesmoke;
-  text-decoration: none;
+.card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #008bf8;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
 }
 
-.navigation__container {
-  display: flex;
+.text-body {
+  color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/*Hover*/
+.card:hover {
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
+.hola {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+  gap: 40px;
   justify-content: center;
-}
-.navigation__list {
-  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */
